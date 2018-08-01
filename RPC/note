@@ -1,0 +1,5 @@
+client
+create one queue（q1）  publish，assign another queue(q2) callback
+server
+consume q1, publish go through q2
+in the process,server run func,give client the result of func

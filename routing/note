@@ -1,0 +1,4 @@
+exchange_declare   'direct'
+queue_declare      exclusive=True
+basic_publish  queue_bind   routing_key=severity
+receive.py  filter field  means some fields go through some queue.
